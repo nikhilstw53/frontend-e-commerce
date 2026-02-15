@@ -1,0 +1,86 @@
+/* GLOBAL FIX (agar pehle se nahi hai to zaroor add karo) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 70px;
+  /* width: 100%; ❌ REMOVE — ye hi scroll kara raha tha */
+
+  background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px; /* same padding, same UI */
+  box-shadow: 0 4px 10px rgba(196, 39, 39, 0.4);
+}
+
+/* LEFT */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+/* LOGO */
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+  flex-shrink: 0; /* safety */
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LINKS */
+.nav-link {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap; /* text break se bachata hai */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ff9800;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: #ff9800;
+  color: #000;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background: #ffa726;
+}
