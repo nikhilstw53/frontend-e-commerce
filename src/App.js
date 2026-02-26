@@ -5,7 +5,7 @@ import { CartProvider } from "./pages/CartContext";
 import { FetchedAsync } from "./pages/FetchedAsync";
 import { Cart } from "./pages/Cart";
 import { BuyNow } from "./pages/BuyNow";
-import Auth from "./pages/Auth";
+import {Auth} from "./pages/Auth";
 import { Navbar } from "./components/Navbar";
 
 function App() {
