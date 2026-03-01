@@ -17,7 +17,7 @@ export function Navbar() {
       <div className="nav-right">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/cart" className="nav-link">My Cart</Link>
-        <Link to="/auth" className="nav-link login-btn">Login</Link>
+        <Link to="/login" className="nav-link login-btn">Login</Link>
       </div>
     </nav>
   );
